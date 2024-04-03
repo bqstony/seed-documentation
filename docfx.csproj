@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <!-- Run DocFx to generate site content -->
+  <Target Name="RunDocFx" AfterTargets="Build">
+    <!-- Install DocFx locally (using version from dotnet-tools.json) -->
+    <Exec Command="dotnet tool restore" ContinueOnError="false" />
+
+    <!-- Run DocFx to generate content -->
+    <Exec Command="dotnet tool run docfx" ContinueOnError="false" />
+  </Target>
+
+</Project>

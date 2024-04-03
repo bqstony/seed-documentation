@@ -1,0 +1,6 @@
+# docfx
+**/bin/
+**/obj/
+_site
+log.txt
+.vscode/

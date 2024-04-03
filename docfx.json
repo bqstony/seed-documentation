@@ -1,0 +1,56 @@
+﻿{
+  "metadata": [],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/**.md",
+          "**/**/toc.yml"
+        ],
+        "exclude": []
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/assets/**",
+          "favicon.ico",
+          "logo.svg"
+        ],
+        "exclude": []
+      }
+    ],
+    "globalMetadata": {
+      "_appTitle": "documentation seed",
+      "_appName": "documentation seed",
+      "_appFooter": "<span>created by <a href=\"https://github.com/bqstony/seed-documentation\"><strong>Michael</strong></a></span>",
+      "_enableSearch": "true",
+      "_appFaviconPath": "favicon.ico",
+      "_lang": "de",
+      "pdf": true,
+      "pdfTocPage": true,
+      "pdfFileName": "seed.pdf",
+      "pdfCoverPage": "index.html"
+    },
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "sitemap": {
+      "baseUrl": "https://github.com/bqstony/seed-documentation",
+      "priority": 0.5,
+      "changefreq": "daily"
+    },
+    "dest": "_site",
+    "template": [
+      "default",
+      "modern",
+      "template"
+    ],
+    "postProcessors": [
+      "ExtractSearchIndex"
+    ],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "disableGitFeatures": false,
+    "disableDefaultFilter": false
+  }
+}
